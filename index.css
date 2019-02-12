@@ -12,6 +12,7 @@ body {
 	height: 100vh;
 	overflow: hidden;
 	margin: 0px;
+	font-family: arial;
 }
 
 @media only screen and (max-width: 768px) {
@@ -58,4 +59,22 @@ div {
 
 .Box3 {
 	grid-area: Box3;
+}
+
+.flexBox {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.flexBox img {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.flexBox h1 {
+	margin: 0px;
+	font-size: 5vw;
 }
