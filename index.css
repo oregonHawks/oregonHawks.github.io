@@ -1,6 +1,6 @@
 body {
 	display: grid;
-	grid-gap: 10px;
+	grid-gap: 1em;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	grid-template-areas: 
@@ -18,7 +18,7 @@ body {
 @media only screen and (max-width: 768px) {
 	body {
 	display: grid;
-	grid-gap: 10px;
+	grid-gap: 1em;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(8, 1fr);
 	grid-template-areas: 
@@ -68,13 +68,13 @@ div {
 }
 
 .flexBox img {
-	height: 100px;
-	width: 100px;
+	height: 6em;
+	width: 6em;
 	border-radius: 50%;
-	margin-right: 10px;
+	margin-right: 1em;
 }
 
 .flexBox h1 {
-	margin: 0px;
-	font-size: 5vw;
+	margin: 0em;
+	font-size: 5em;
 }
