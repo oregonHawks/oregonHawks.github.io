@@ -1,7 +1,6 @@
 body {
 	display: grid;
-	grid-gap: 1em;
-	grid-template-columns: repeat(6, 1fr);
+ 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	grid-template-areas: 
 	"Logo Logo Logo Navigation Navigation Navigation"
@@ -11,14 +10,15 @@ body {
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
-	margin: 0px;
+	margin: 0em;
 	font-family: arial;
+	background-image: url(pics/back.jpeg);
+	color: white;
 }
 
 @media only screen and (max-width: 768px) {
 	body {
 	display: grid;
-	grid-gap: 1em;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(8, 1fr);
 	grid-template-areas: 
@@ -33,10 +33,6 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 	}
-}
-
-div {
-	background-color: skyblue;
 }
 
 .Logo {
@@ -65,16 +61,46 @@ div {
 	display: flex;
 	justify-content: center;
     align-items: center;
+	text-align: center;
 }
 
 .flexBox img {
-	height: 6em;
-	width: 6em;
 	border-radius: 50%;
-	margin-right: 1em;
+	margin-right: 1.5em;
+	box-shadow: .2em .2em black;
 }
 
 .flexBox h1 {
 	margin: 0em;
-	font-size: 5em;
+	font-size: 2.5em;
+	text-shadow: .1em .1em black;
+}
+
+.flexBox a {
+	text-decoration: none;
+	margin-right: 1em;
+	color: white;
+	font-size: 1.5em;
+	border-right: .15em solid white;
+	border-radius: .15em;
+	padding-right: .3em;
+	text-shadow: .1em .1em black;
+}
+
+.service {
+	margin: 0em .5em;
+	position: relative;
+}
+
+.service img {
+	border-radius: .5em;
+}
+
+.service h2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	padding: .2em;
+	color: black;
 }
