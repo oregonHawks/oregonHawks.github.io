@@ -124,10 +124,10 @@ a {
         height: 130px;
     }
     .six {
-        font-size: 35px;
+        font-size: 30px;
     }
     a {
-        font-size: 20px;
+        font-size: 16px;
         border-left: 5px double black;
         border-right: 5px double black;
         border-radius: 5px;
