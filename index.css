@@ -9,10 +9,11 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    font-family: 'Roboto';
+    font-family: 'Alfa Slab One', cursive;
     background-image:url('pics/back.jpeg');
     background-repeat:no-repeat;
     overflow: hidden;
+    text-align: center;
 }
 
 a {
@@ -98,7 +99,7 @@ a {
     grid-area: six;
     justify-self: center;
     align-self: start;
-    font-size: 45px;
+    font-size: 38px;
     border-left: 5px double black;
     border-right: 5px double black;
     border-radius: 5px;
