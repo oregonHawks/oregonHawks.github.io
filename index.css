@@ -1,5 +1,5 @@
 body {
-    display: grid; 
+    display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -124,7 +124,7 @@ a {
         height: 130px;
     }
     .six {
-        font-size: 30px;
+        font-size: 30px;    
     }
     a {
         font-size: 16px;
