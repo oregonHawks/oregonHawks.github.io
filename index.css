@@ -1,106 +1,136 @@
 body {
-	display: grid;
- 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	grid-template-areas: 
-	"Logo Logo Logo Navigation Navigation Navigation"
-	"Box1 Box1 Box2 Box2 Box3 Box3"
-	"Box1 Box1 Box2 Box2 Box3 Box3";
-	text-align: center;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-	margin: 0em;
-	font-family: arial;
-	background-image: url(pics/back.jpeg);
-	color: white;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-template-areas: 
+    "one five three"
+    "two six four";
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto';
+    background-image:url('pics/back.jpeg');
+    background-repeat:no-repeat;
+    overflow: hidden;
 }
 
-@media only screen and (max-width: 768px) {
-	body {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(8, 1fr);
-	grid-template-areas: 
-	"Logo Logo Logo Logo Logo Logo"
-	"Navigation Navigation Navigation Navigation Navigation Navigation"
-	"Box1 Box1 Box1 Box1 Box1 Box1"  
-	"Box1 Box1 Box1 Box1 Box1 Box1"
-	"Box2 Box2 Box2 Box2 Box2 Box2"
-	"Box2 Box2 Box2 Box2 Box2 Box2"
-	"Box3 Box3 Box3 Box3 Box3 Box3"
-	"Box3 Box3 Box3 Box3 Box3 Box3";
-    overflow-x: hidden;
-    overflow-y: scroll;
-	}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
 }
 
-.Logo {
-	grid-area: Logo;
-	align-self: center;
+.box {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-template-areas: 
+    "one five three"
+    "two six four";
 }
 
-.Navigation {
-	grid-area: Navigation;
-	align-self: center;
+.one {
+    grid-area: one;
+    justify-self: center;
+    align-self: center;
 }
 
-.Box1 {
-	grid-area: Box1;
+.one a {
+    border-left: 5px double black;
+    border-radius: 5px;
+    padding-left: 5px;
 }
 
-.Box2 {
-	grid-area: Box2;
+.two {
+    grid-area: two;
+    justify-self: center;
+    align-self: center;
 }
 
-.Box3 {
-	grid-area: Box3;
+.two a {
+    border-radius: 5px;
+    border-left: 5px double black;
+    padding-left: 5px;
 }
 
-.flexBox {
-	display: flex;
-	justify-content: center;
-    align-items: center;
-	text-align: center;
+.three {
+    grid-area: three;
+    justify-self: center;
+    align-self: center;
 }
 
-.flexBox img {
-	border-radius: 50%;
-	margin-right: 1.5em;
-	box-shadow: .2em .2em black;
+.three a {
+    border-radius: 5px;
+    border-right: 5px double black;
+    padding-right: 5px;
 }
 
-.flexBox h1 {
-	margin: 0em;
-	font-size: 2.5em;
-	text-shadow: .1em .1em black;
+.four {
+    grid-area: four;
+    justify-self: center;
+    align-self: center;
 }
 
-.flexBox a {
-	text-decoration: none;
-	margin-right: 1em;
-	color: white;
-	font-size: 1.5em;
-	border-right: .15em solid white;
-	border-radius: .15em;
-	padding-right: .3em;
-	text-shadow: .1em .1em black;
+.four a {
+    border-radius: 5px;
+    border-right: 5px double black;
+    padding-right: 5px;
 }
 
-.service {
-	margin: 0em .5em;
-	position: relative;
+.five {
+    grid-area: five;
+    justify-self: center;
+    align-self: center;
+    transform: rotate(45deg);
+    margin: 0px;
 }
 
-.service img {
-	border-radius: .5em;
+.five img {
+    width: 150px;
+    height: 150px;
+    border: 5px double black;
+    border-radius: 5px;
 }
 
-.service h2 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: white;
-	padding: .2em;
-	color: black;
+.six {
+    grid-area: six;
+    justify-self: center;
+    align-self: start;
+    font-size: 45px;
+    border-left: 5px double black;
+    border-right: 5px double black;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media only screen and (max-width: 1008px){
+    body {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 50px 50px; 
+        justify-content: center;
+        grid-template-areas: 
+        "five five five five"
+        "six six six six"
+        "one two three four";
+    }
+    .five img {
+        width: 130px;
+        height: 130px;
+    }
+    .six {
+        font-size: 35px;
+    }
+    a {
+        font-size: 20px;
+        border-left: 5px double black;
+        border-right: 5px double black;
+        border-radius: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
