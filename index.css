@@ -10,16 +10,17 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Alfa Slab One', cursive;
-    background-image:url('pics/back.jpeg');
+    background-image: linear-gradient(#ff71ce, #b967ff, #01cdfe);
     background-repeat:no-repeat;
     overflow: hidden;
     text-align: center;
 }
 
 a {
+    font-size: 3vw;
     text-decoration: none;
-    color: black;
-    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: 1px black;
 }
 
 .box {
@@ -89,8 +90,8 @@ a {
 }
 
 .five img {
-    width: 150px;
-    height: 150px;
+    width: 15vw;
+    height: 15vw;
     border: 5px double black;
     border-radius: 5px;
 }
@@ -99,35 +100,39 @@ a {
     grid-area: six;
     justify-self: center;
     align-self: start;
-    font-size: 38px;
+    font-size: 5vw;
     border-left: 5px double black;
     border-right: 5px double black;
     border-radius: 5px;
     padding-left: 5px;
     padding-right: 5px;
+    color: white;
+    -webkit-text-stroke: 1px black;
 }
 
-@media only screen and (max-width: 1008px){
+@media only screen and (max-width: 1000px){
     body {
         display: grid;
-        grid-gap: 10px;
+        grid-column-gap: 10px;
+        grid-row-gap: 12vh;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 200px 50px 50px; 
         justify-content: center;
+        align-content: center;
         grid-template-areas: 
         "five five five five"
         "six six six six"
         "one two three four";
     }
     .five img {
-        width: 130px;
-        height: 130px;
+        width: 40vw;
+        height: 40vw;
     }
     .six {
-        font-size: 30px;    
+        font-size: 8.5vw;;    
     }
     a {
-        font-size: 16px;
+        font-size: 4.5vw;
         border-left: 5px double black;
         border-right: 5px double black;
         border-radius: 5px;
