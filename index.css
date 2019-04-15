@@ -1,142 +1,102 @@
 body {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, 1fr); 
-    justify-content: center;
-    grid-template-areas: 
-    "one five three"
-    "two six four";
-    margin: 0;
     width: 100vw;
     height: 100vh;
-    font-family: 'Alfa Slab One', cursive;
-    background-image: linear-gradient(white, blue);
-    background-repeat:no-repeat;
     overflow: hidden;
+    background-color: black;
+    color: white;
+    display: grid;
+    font-size: 5vmax;
     text-align: center;
+    margin: 0;
+    font-family: 'Unica One', cursive;
 }
-
+#head {
+    grid-row: 1;
+    display: grid;
+}
+#body {
+    grid-row: 2;
+    display: grid;
+}
+#title {
+    grid-row: 1;
+    font-size: 10vmax;
+    padding: 5vmax 0 0 0;
+    align-self: center;
+    justify-self: center;
+    padding: 0;
+}
+nav {
+    grid-row: 2;
+    display: grid;
+    background-color: rgb(5,56,107,.5);
+}
 a {
-    font-size: 3vw;
     text-decoration: none;
     color: white;
-    -webkit-text-stroke: 1px black;
+    font-size: 4vmax;
+    align-self: center;
+    justify-self: center;
 }
-
+#a1 {
+    grid-column: 1;
+}
+#a2 {
+    grid-column: 2;
+}
+#a3 {
+    grid-column: 3;
+}
 .box {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    grid-template-areas: 
-    "one five three"
-    "two six four";
 }
-
-.one {
-    grid-area: one;
-    justify-self: center;
+#img1 {
+    grid-column: 1;
     align-self: center;
 }
-
-.one a {
-    border-left: 5px double black;
-    border-radius: 5px;
-    padding-left: 5px;
+#img2 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    padding: 0 5vmax 2vmax 0 ;
+    justify-self: end;
 }
-
-.two {
-    grid-area: two;
-    justify-self: center;
+#img3 {
+    grid-column: 1;
     align-self: center;
 }
-
-.two a {
-    border-radius: 5px;
-    border-left: 5px double black;
-    padding-left: 5px;
-}
-
-.three {
-    grid-area: three;
-    justify-self: center;
+#info1 {
+    grid-column: 2;
     align-self: center;
 }
-
-.three a {
-    border-radius: 5px;
-    border-right: 5px double black;
-    padding-right: 5px;
+#info2 {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: end;
 }
-
-.four {
-    grid-area: four;
-    justify-self: center;
+#info3 {
+    grid-column: 2;
     align-self: center;
 }
-
-.four a {
-    border-radius: 5px;
-    border-right: 5px double black;
-    padding-right: 5px;
+.box img {
+    width: 15vmax;
+    filter: invert(100%);
+    margin: 0 0 2vmax 5vmax ;
 }
-
-.five {
-    grid-area: five;
-    justify-self: center;
-    align-self: center;
-    transform: rotate(45deg);
-    margin: 0px;
+#box1 {
+    background-image: url("Images/cleaning.jpg");
+    background-size: cover;
 }
-
-.five img {
-    width: 15vw;
-    height: 15vw;
-    border: 5px double black;
-    border-radius: 5px;
+#box2 {
+    background-image: url("Images/moving.jpg");
+    background-size: cover;
 }
-
-.six {
-    grid-area: six;
-    justify-self: center;
-    align-self: start;
-    font-size: 5vw;
-    border-left: 5px double black;
-    border-right: 5px double black;
-    border-radius: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: white;
-    -webkit-text-stroke: 1px black;
+#box3 {
+    background-image: url("Images/hose.jpg");
+    background-size: cover;
 }
-
-@media only screen and (max-width: 1000px){
-    body {
-        display: grid;
-        grid-column-gap: 10px;
-        grid-row-gap: 12vh;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 200px 50px 50px; 
-        justify-content: center;
-        align-content: center;
-        grid-template-areas: 
-        "five five five five"
-        "six six six six"
-        "one two three four";
-    }
-    .five img {
-        width: 40vw;
-        height: 40vw;
-    }
-    .six {
-        font-size: 8.5vw;;    
-    }
-    a {
-        font-size: 4.5vw;
-        border-left: 5px double black;
-        border-right: 5px double black;
-        border-radius: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+.box a {
+    background-color: rgba(5,56,107,.5);
+    width: 25vmax;
 }
