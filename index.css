@@ -1,9 +1,11 @@
+
 body {
     width: 100vw;
     height: 100vh;
     background-color: #1a1a1d;
     color: white;
     display: grid;
+    grid-gap: .5vmax;
     font-size: 5vmax;
     text-align: center;
     margin: 0;
@@ -16,6 +18,7 @@ body {
 #body {
     grid-row: 2;
     display: grid;
+    grid-gap: .5vmax;
 }
 #header {
     display: grid;
