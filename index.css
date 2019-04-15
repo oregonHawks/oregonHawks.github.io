@@ -1,10 +1,13 @@
+@media only screen and (min-width: 1000px) {
+
+}
 body {
     width: 100vw;
     height: 100vh;
     background-color: #1a1a1d;
     color: white;
     display: grid;
-    grid-gap: .5vmax;
+    grid-gap: 1vmax;
     font-size: 5vmax;
     text-align: center;
     margin: 0;
@@ -17,11 +20,7 @@ body {
 #body {
     grid-row: 2;
     display: grid;
-    grid-gap: .5vmax;
-}
-#header {
-    display: grid;
-    grid-gap: 100px;
+    grid-gap: 1vmax;
 }
 #title {
     font-size: 10vmax;
@@ -30,17 +29,8 @@ body {
     align-self: center;
     justify-self: center;
     grid-row: 1;
-    grid-column: 1;
     color: #4056a1;
     font-weight: bold;
-}
-#logo {
-    align-self: center;
-    justify-self: center;
-    z-index: -100;
-    grid-row: 1;
-    grid-column: 1;
-    margin: 0;
 }
 nav {
     grid-row: 2;
